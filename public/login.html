@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | EduGalaxy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+    <canvas id="loginCanvas"></canvas>
+
+    <div class="login-container">
+        <div class="login-glass-card">
+            <div class="login-header">
+                <div class="login-logo-hex">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <h1>Welcome Back</h1>
+                <p>Access the Student Management Nebula</p>
+            </div>
+
+            <form id="login-form">
+                <div class="login-input-group">
+                    <label>Username</label>
+                    <div class="login-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" id="username" placeholder="Admin Username" required>
+                    </div>
+                </div>
+
+                <div class="login-input-group">
+                    <label>Password</label>
+                    <div class="login-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                        <i class="fas fa-eye-slash toggle-pass" id="togglePass"></i>
+                    </div>
+                </div>
+
+                <div class="login-input-group">
+                    <label>Role</label>
+                    <div class="login-field">
+                        <i class="fas fa-id-badge"></i>
+                        <select id="role">
+                            <option value="admin">Administrator</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" onclick="window.location.href='dashboard.html'" class="login-btn">
+    Login
+</button>
+            </form>
+
+            <div class="login-footer">
+                <a href="index.html"><i class="fas fa-arrow-left"></i> Return to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
